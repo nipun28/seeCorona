@@ -1,19 +1,14 @@
 function updateMap() {
 
-    console.log("Updating");
   fetch("data.json")
     .then((response) => response.json())
     .then((rsp) => {
 
-      let sum = 0, num = 0;
       rsp.data.forEach((element) => {
 
           const longitude = element.longitude;
           const latitude = element.latitude;
           const infected = element.infected;
-
-          sum += infected;
-          num++;
 
           var color;
           if(infected < 100) color = 'green';
@@ -29,10 +24,8 @@ function updateMap() {
             .addTo(map);
       });
 
-      console.log(sum/num);
     });
 
 }
 
-// setInterval(updateMap, 1);
 updateMap();
