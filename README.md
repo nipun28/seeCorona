@@ -6,6 +6,7 @@ This website analyzes the number of corona-positive people in a particular regio
 
 
 Implication of various colours:
+
     Green: Infected poulation between 0 - 100
     Light Green: Infected poulation between 101 - 250
     Yellow: Infected poulation between 251 - 500
